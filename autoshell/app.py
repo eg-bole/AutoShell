@@ -1,22 +1,22 @@
 import os, yaml
 
-import globaldata
-from tools.xml import load_xml_note
+import autoshell.globaldata
+from autoshell.tools.xml import load_xml_note
 
 BASE_DATA = {
     'API_BASE':'https://api.openai.com/v1',
     'API_PROXY':'',
     'API_KEY':'',
-    'API_MODEL':'gpt-3.5-turbo',
-    'LANGUAGE':'English'
+    'API_MODEL':'gpt-3.5-turbo-16k',
+    'LANGUAGE':'Chinese'
 }
-MSG = load_xml_note('msg.xml')
+MSG = load_xml_note(os.path.join('autoshell', 'msg.xml'))
 
 
 def main():
     home_dir = os.path.expanduser("~")
     config_dir = os.path.join(home_dir, ".config")
-    smartshell_dir = os.path.join(config_dir, "SmartShell")
+    smartshell_dir = os.path.join(config_dir, "AutoShell")
     if not os.path.exists(smartshell_dir):
         os.makedirs(smartshell_dir)
     key_file = os.path.join(smartshell_dir, "config.yaml")
@@ -31,7 +31,4 @@ def main():
         data['API_PROXY'] = input(MSG['init2'][data['LANGUAGE']])
         with open(key_file, 'w') as file:
             yaml.dump(data, file)
-    globaldata.config = data
-
-if __name__ == '__main__':
-    main()
+    autoshell.globaldata.config = data

@@ -1,0 +1,13 @@
+LICENSE
+setup.py
+AutoShell.egg-info/PKG-INFO
+AutoShell.egg-info/SOURCES.txt
+AutoShell.egg-info/dependency_links.txt
+AutoShell.egg-info/entry_points.txt
+AutoShell.egg-info/requires.txt
+AutoShell.egg-info/top_level.txt
+autoshell/app.py
+autoshell/bash.py
+autoshell/globaldata.py
+autoshell/llm.py
+autoshell/support.py

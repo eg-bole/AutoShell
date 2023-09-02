@@ -1,4 +1,5 @@
 import openai
+from autoshell.globaldata import config
 
 class GPT:
     def __init__(self):
@@ -39,8 +40,7 @@ class GPT:
         self.messages = []
 
 # 设置代理
-from globaldata import config
-if config['OPENAI_PROXY']:
+if config['API_PROXY']:
     openai.proxy = config['API_PROXY']
 openai.api_key = config['API_KEY']
 openai.api_base = config['API_BASE']
