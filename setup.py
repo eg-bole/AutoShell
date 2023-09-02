@@ -13,10 +13,7 @@ setup(
         # 列出你的项目所依赖的其他Python库
         "openai",
         "pyyaml",
-        "rich",
-        "cryptography",
-        "paramiko",
-        "pyte"
+        "rich"
     ],
     author='EG-bole',
     author_email='eg-bole@foxmail.com',
