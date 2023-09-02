@@ -1,0 +1,14 @@
+<body>
+    <note title="init1">
+        <content type="text" language="English">Please enter your OPENAI API key:</content>
+        <content type="text" language="Chinese">请输入您的 OPENAI API 密钥：</content>
+    </note>
+    <note title="init2">
+        <content type="text" language="English">Proxy Address: (Leave blank for default)</content>
+        <content type="text" language="Chinese">代理地址：（默认为空）</content>
+    </note>
+    <note title="language_choose">
+        <content type="text" language="English">Language Selection:Chinese / [English]</content>
+        <content type="text" language="Chinese">选择语言：中文/[英文]</content>
+    </note>
+</body>
