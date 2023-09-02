@@ -6,7 +6,7 @@ setup(
     packages=['autoshell'],
     entry_points={
         'console_scripts': [
-            'sshell = autoshell.app:main'
+            'autoshell = autoshell.app:main'
         ]
     },
     install_requires=[
