@@ -6,17 +6,18 @@ setup(
     packages=['autoshell'],
     entry_points={
         'console_scripts': [
-            'autoshell = autoshell.app:main'
+            '- = autoshell.bash:main'
         ]
     },
     install_requires=[
         # 列出你的项目所依赖的其他Python库
         "openai",
         "pyyaml",
-        "rich"
+        "rich",
+        "pyte"
     ],
     author='EG-bole',
     author_email='eg-bole@foxmail.com',
     description='Unleash Command-Line Efficiency with GPT Integration!',
-    url='https://github.com/eg-bole/AutoShell',
+    url='https://github.com/eg-bole/AutoShell.git',
 )

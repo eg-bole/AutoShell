@@ -8,7 +8,8 @@ BASE_DATA = {
     'API_PROXY':'',
     'API_KEY':'',
     'API_MODEL':'gpt-3.5-turbo-16k',
-    'LANGUAGE':'Chinese'
+    'LANGUAGE':'Chinese',
+    'ENCODE':'UTF-8'
 }
 MSG = load_xml_note(os.path.join('autoshell', 'msg.xml'))
 

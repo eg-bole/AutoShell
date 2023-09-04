@@ -8,6 +8,10 @@ AutoShell.egg-info/requires.txt
 AutoShell.egg-info/top_level.txt
 autoshell/app.py
 autoshell/bash.py
+autoshell/bash1.py
+autoshell/bash2.py
+autoshell/bash3.py
 autoshell/globaldata.py
 autoshell/llm.py
 autoshell/support.py
+autoshell/tt.py
