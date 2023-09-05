@@ -1,5 +1,5 @@
 import openai
-from autoshell.globaldata import config
+from autoshell.globaldata import CONFIG as config
 
 class GPT:
     def __init__(self):

@@ -1,6 +1,6 @@
 from autoshell.prompts.p_base import *
 from .role import Role
-from autoshell.globaldata import config as CONFIG
+from autoshell.globaldata import  CONFIG
 import re
 import autoshell.support as x
 

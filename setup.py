@@ -6,7 +6,7 @@ setup(
     packages=['autoshell'],
     entry_points={
         'console_scripts': [
-            '- = autoshell.bash:main'
+            'ashell = autoshell.app:main'
         ]
     },
     install_requires=[
@@ -20,4 +20,5 @@ setup(
     author_email='eg-bole@foxmail.com',
     description='Unleash Command-Line Efficiency with GPT Integration!',
     url='https://github.com/eg-bole/AutoShell.git',
+    python_requires=">=3.7, <4",
 )

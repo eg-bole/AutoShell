@@ -1,4 +1,4 @@
-from autoshell.bash import main
+from autoshell.app import main
 
 if __name__ == '__main__':
     main()
